@@ -1,26 +1,206 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* Light & Dark mode background and text defaults */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light dark;
+  --color-primary-dark: #2a2edc;
+  --color-primary-light: #4c6fff;
+  --color-accent-white: #ffffff;
+  --color-text-dark: #0a0a0a;
+  --navbar-height: 96px; /* desktop height */
+  --wave-height: 74px; /* controls the wave depth */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html,
+body {
+  @apply min-h-screen bg-white text-gray-900 transition-colors duration-300;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-color-scheme: light) {
+  html,
+  body {
+    @apply bg-gray-900 text-gray-100;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Optional smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLE */
+.navbar-gradient {
+  background: linear-gradient(
+    to right,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+}
+
+.navbar-wave {
+  clip-path: path("M0,0 H100% V85 Q50%,100 0,85 Z");
+}
+
+/* Global font example — add in head or import Google font in layout */
+html {
+  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+}
+
+/* --- Navbar base + gradient --- */
+.navbar-root {
+  position: relative;
+  overflow: hidden; /* Hide excess content outside the navbar */
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  color: var(--color-accent-white);
+  height: var(--navbar-height);
+  min-height: var(--navbar-height);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  box-shadow: 0 4px 18px rgba(17, 24, 39, 0.12);
+}
+
+/* --- the white wave cutout (uses clip-path path) --- 
+   We place a white pseudo-element that overlaps the bottom of the navbar,
+   clipped to a smooth bezier-like curve. tweak --wave-height to adjust depth */
+.navbar-root::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px; /* Slight overlap to hide seam */
+  height: 50px; /* Adjusted the height to better fit the curve */
+  background: var(--color-accent-white);
+  clip-path: path(
+    "M0 0 Q 20 20, 40 10 Q 60 0, 80 10 Q 100 20, 100 0 L100 100 L0 100 Z"
+  );
+  -webkit-clip-path: path(
+    "M0 0 Q 20 20, 40 10 Q 60 0, 80 10 Q 100 20, 100 0 L100 100 L0 100 Z"
+  );
+  z-index: 2;
+  pointer-events: none; /* Make sure it doesn't interfere with interactions */
+}
+
+/* Ensure the content area sits above the wave white area */
+.page-content {
+  position: relative;
+  z-index: 3;
+  padding-top: 20px;
+}
+
+/* --- Logo treatment: iV on a lighter pill --- */
+.logo-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.16); /* subtle light pill */
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Make i smaller and slightly lighter to match image */
+.logo-i {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  letter-spacing: -0.5px;
+}
+
+/* VOTE text next to it */
+.logo-vote {
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  font-size: 1.05rem;
+  color: white;
+}
+
+/* --- link active underline mimic from image --- */
+.nav-link {
+  position: relative;
+  padding: 6px 0;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-link[data-active="true"]::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: -10px;
+  height: 4px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 1);
+  width: 40%;
+}
+
+/* --- Buttons styling (desktop) --- */
+.btn-outline {
+  padding: 8px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-solid {
+  padding: 8px 14px;
+  border-radius: 9999px;
+  background: white;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  border: none;
+}
+
+/* Mobile menu panel */
+.mobile-panel {
+  position: absolute;
+  top: calc(var(--navbar-height));
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(42, 46, 220, 0.95),
+    rgba(91, 114, 255, 0.96)
+  );
+  padding: 20px;
+  z-index: 50;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.18);
+}
+
+/* Nav link hover underline animation */
+.nav-link-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link-animated::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link-animated:hover::after {
+  width: 100%;
 }
