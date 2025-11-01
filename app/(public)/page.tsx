@@ -76,21 +76,23 @@ const Home = () => {
                   className="w-full sm:w-80 md:shrink-0 md:rounded-t-2xl md:w-[300px] translate-y-[-30%] md:translate-y-[-5%] rounded-t-2xl  h-auto md:h-[30vh] bg-[#c6ddf5] "
                 >
                   <div className=" rounded-2xl md:rounded-t-xl p-5 sm:p-6 md:p-3.5 md:pt-13 md:px-6 text-center md:text-left text-slate-700">
-                    <div className="text-xs font-medium uppercase tracking-wide">
-                      Step 1
+                    <div className='mb-3.5'>
+                      <div className="text-xs font-medium uppercase tracking-wide">
+                        Step 1
+                      </div>
+                      <h3 className="font-semibold text-lg sm:text-2sm leading-snug">
+                        SIGN UP
+                      </h3>
+                      <p className="text-xs ">
+                        Create an account on this system to vote
+                      </p>
                     </div>
-                    <h3 className="font-semibold text-lg sm:text-xl leading-snug">
-                      SIGN UP
-                    </h3>
-                    <p className="text-sm ">
-                      Create an account on this system to vote
-                    </p>
 
                     {/* CTA button */}
-                    <div className="mt-3 sm:mt-5">
+                    <div className="mt-3 sm:mt-2 text-center">
                       <Link
                         href="#"
-                        className="inline-block text-sm font-semibold px-4 py-2 rounded-full bg-white  shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1209b0] focus:ring-offset-2"
+                        className="inline-block text-[.7rem] font-semibold px-4 py-1 rounded-full bg-white border border-slate-700 text-slate-700 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1209b0] focus:ring-offset-2"
                         aria-label="Register as a Voter"
                       >
                         Register as a Voter
@@ -106,7 +108,7 @@ const Home = () => {
                     <div className="text-xs font-medium uppercase tracking-wide text-white/75">
                       Step 2
                     </div>
-                    <h3 className="text-white font-semibold text-lg sm:text-xl leading-snug">
+                    <h3 className="text-white font-semibold text-lg sm:text-2sm leading-snug">
                       VOTE
                     </h3>
                     <p className="text-white/90 text-sm leading-tight">
@@ -119,7 +121,7 @@ const Home = () => {
                     <div className="text-xs font-medium uppercase tracking-wide text-white/75">
                       Step 3
                     </div>
-                    <h3 className="text-white font-semibold text-lg sm:text-xl leading-snug">
+                    <h3 className="text-white font-semibold text-lg sm:text-2sm leading-snug">
                       VIEW ELECTION RESULTS
                     </h3>
                     <p className="text-white/90 text-sm leading-tight">
