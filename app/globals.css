@@ -15,17 +15,17 @@
   --wave-height: 74px; /* controls the wave depth */
 }
 
-html,
+/* html,
 body {
   @apply min-h-screen bg-white text-gray-900 transition-colors duration-300;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   html,
   body {
     @apply bg-gray-900 text-gray-100;
   }
-}
+} */
 
 /* Optional smooth scroll */
 html {
