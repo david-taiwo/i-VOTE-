@@ -89,7 +89,7 @@ export default function Navbar() {
 
         {/* Decorative gradient + wave background (unchanged) */}
         <div className="pointer-events-none absolute inset-x-0 top-0 -z-10">
-          <div className="h-20 w-full bg-[linear-gradient(90deg,#4f46e5,#6366f1,#60a5fa)]" />
+          <div className="h-20 w-full bg-[linear-gradient(90deg,#1209b0,#4f46e5,#6366f1)]" />
           {/* SVG wave (unchanged) */}
           <svg
             className="w-full h-40 -mt-40"

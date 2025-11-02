@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] bg-white flex items-center overflow-hidden">
+      <section className="relative lg:min-h-[85vh] bg-white flex items-center">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-blue-50 -z-10" />
 
       <div className="w-full max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
@@ -65,7 +65,7 @@ const Home = () => {
       <section className='flex flex-col items-center justify-center'>
         <div aria-label="Three step process" className="w-full flex ">
           <div className="w-full">
-            <div
+            <div 
               className="relative bg-[#1209b0] h-auto md:h-[27vh] py-8 md:py-0 shadow-[inset_0_2px_0_rgba(0,0,0,0.06)]"
             >
               {/* Mobile/Tablet layout wrapper */}
@@ -139,14 +139,57 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='bg-[#c6ddf5] w-full flex items-center justify-center h-50 md:h-30'>
+        <div className='bg-[#c6ddf5] w-full flex items-center justify-center h-auto md:h-45'>
           <div className='w-full mx-auto px-3 md:px-8 lg:px-12 py-6'>
             <h3 className='text-xl md:text-2xl font-semibold text-center text-slate-700'>
               Make your decision-making process more modern, safe, and efficient with iVOTE
             </h3>
-            <p className='mt-2 text-center text-slate-600 px-7 md:px-20 lg:px-60'>
+            <p className='mt-0 text-center text-slate-600 px-7 md:px-20 lg:px-60'>
               Upgrade from manual ballot counting to an online election system without jeopardizing the integrity of your vote
             </p>
+          </div>
+        </div>
+      </section>
+      {/* Features Section */}
+      <section className='relative max-h-[70vh] bg-white flex overflow-hidden'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pb-20'>
+          <h2 className='text-2xl md:text-3xl font-semibold text-center text-slate-700'>
+            Our Features
+          </h2>
+          <p className='text-center text-slate-600 px-7 md:px-20 lg:px-60'>
+            We provide an online voting system that exceed expectations, from secure polling software to the management of complex virtual voting events.
+          </p>
+          <div className='mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+            {/* Feature 1 */}
+            <div className='bg-white p-6 rounded-lg  flex flex-col items-center text-center'>
+              <Image src="/feat1.png" alt="Secure Voting Icon" width={200} height={200} />
+              <h3 className='text-lg font-semibold text-slate-700'>
+                Secure Voting
+              </h3>
+              <p className='mt-1 px-10 text-sm text-slate-600'>
+                In just few cliks, you can vote your preferred candidates.
+              </p>
+            </div>
+            {/* Feature 2 */}
+            <div className='bg-white p-6 rounded-lg flex flex-col items-center text-center'>
+              <Image src="/feat2.png" alt="Real-time Results Icon" width={200} height={200} />
+              <h3 className='text-lg font-semibold text-slate-700'>
+                Real-time Results
+              </h3>
+              <p className='mt-2 px-10 text-sm text-slate-600'>
+                View real time voting results and scores of each candidates.
+              </p>
+            </div>
+            {/* Feature 3 */}
+            <div className='bg-white p-6 rounded-lg flex flex-col items-center text-center'>
+              <Image src="/feat1.png" alt="User-friendly Interface Icon" width={200} height={200} />
+              <h3 className='text-lg font-semibold text-slate-700'>
+                User-friendly Interface
+              </h3>
+              <p className='mt-2 px-10 text-sm text-slate-600'>
+                Our intuitive design makes it easy for anyone to vote, regardless of their tech-savviness.
+              </p>
+            </div>
           </div>
         </div>
       </section>
