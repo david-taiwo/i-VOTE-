@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Inter", system-ui, sans-serif;
-}
-
 /* Light & Dark mode background and text defaults */
 :root {
   color-scheme: light dark;
@@ -45,11 +41,7 @@ html {
   clip-path: path("M0,0 H100% V85 Q50%,100 0,85 Z");
 }
 
-/* Global font example — add in head or import Google font in layout */
-html {
-  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial;
-}
+/* Inter font is applied via layout.tsx className */
 
 /* --- Navbar base + gradient --- */
 .navbar-root {

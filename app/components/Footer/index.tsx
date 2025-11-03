@@ -26,11 +26,11 @@ export default function Footer() {
 
       {/* Main Footer Background */}
       <div className="relative bg-[linear-gradient(90deg,#1209b0,#4f46e5,#6366f1)] pt-15 pb-5 md:pt-20 md:pb-5">
-        <div className="max-w-full mx-auto px-6 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_2fr] gap-5 md:gap-3">
+        <div className="max-w-full mx-auto px-6 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_2fr] gap-5 md:gap-3 text-center lg:text-left">
           
           {/* Logo + Social Section */}
-          <div className=''>
-            <div className="flex items-center gap-3 mb-4 ">
+          <div>
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
               <Image
                 src="/log6.png"
                 alt="i-vote logo"
@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
             <p className="text-sm text-white/80 mb-6">© Copyright 2023</p>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center lg:justify-start gap-4">
               <Link
                 href="#"
                 className="p-2.5 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
           </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 justify-items-center lg:justify-items-start">
               {/* Product Section */}
               <div>
                 <h4 className="text-base font-semibold mb-3">Product</h4>
