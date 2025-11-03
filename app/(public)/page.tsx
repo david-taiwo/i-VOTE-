@@ -6,11 +6,12 @@ import Link from 'next/link'
 const Home = () => {
   return (
     <div>
+
       {/* Hero Section */}
       <section className="relative lg:min-h-[85vh] bg-white flex items-center">
       {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-blue-50 -z-10" /> */}
 
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-[#1209b0]">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-[#483ef7]">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10 lg:gap-0">
           
           {/* TEXT COL */}
@@ -62,11 +63,11 @@ const Home = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className='flex flex-col items-center justify-center'>
+      <section className='flex flex-col items-center justify-center text-[#483ef7]'>
         <div aria-label="Three step process" className="w-full flex ">
           <div className="w-full">
             <div 
-              className="relative bg-[#1209b0] h-auto md:h-[27vh] py-8 md:py-0 shadow-[inset_0_2px_0_rgba(0,0,0,0.06)]"
+              className="relative bg-[#180ddb] h-auto md:h-[27vh] py-8 md:py-0 shadow-[inset_0_2px_0_rgba(0,0,0,0.06)]"
             >
               {/* Mobile/Tablet layout wrapper */}
               {/* <div className="h-full max-w-full mx-auto px-4 sm:px-6 md:px-8 flex flex-col md:flex-row md:items-center gap-0 md:gap-8"> */}
@@ -75,7 +76,7 @@ const Home = () => {
                 <div
                   className="w-full sm:w-80 md:shrink-0 md:rounded-t-2xl md:w-[300px] translate-y-[-30%] md:translate-y-[-5%] rounded-t-2xl  h-auto md:h-[30vh] bg-[#c6ddf5] "
                 >
-                  <div className=" rounded-2xl md:rounded-t-xl p-5 sm:p-6 md:p-3.5 md:pt-13 md:px-6 text-center md:text-left text-[#1209b0]">
+                  <div className=" rounded-2xl md:rounded-t-xl p-5 sm:p-6 md:p-3.5 md:pt-13 md:px-6 text-center md:text-left">
                     <div className='mb-3.5'>
                       <div className="text-xs font-medium uppercase tracking-wide">
                         Step 1
@@ -92,7 +93,7 @@ const Home = () => {
                     <div className="mt-3 sm:mt-2 text-center">
                       <Link
                         href="#"
-                        className="inline-block text-[.7rem] font-semibold px-4 py-1 rounded-full bg-white border border-[#1209b0] text- shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1209b0] focus:ring-offset-2"
+                        className="inline-block text-[.7rem] font-semibold px-4 py-1 rounded-full bg-white border border-[#180ddb] text- shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1209b0] focus:ring-offset-2"
                         aria-label="Register as a Voter"
                       >
                         Register as a Voter
@@ -140,7 +141,7 @@ const Home = () => {
         </div>
 
         <div className='bg-[#c6ddf5] w-full flex items-center justify-center h-auto md:h-45'>
-          <div className='w-full mx-auto px-3 md:px-8 lg:px-12 py-6 text-[#1209b0]'>
+          <div className='w-full mx-auto px-3 md:px-8 lg:px-12 py-6 '>
             <h3 className='text-xl md:text-2xl font-semibold text-center'>
               Make your decision-making process more modern, safe, and efficient with iVOTE
             </h3>
@@ -151,8 +152,8 @@ const Home = () => {
         </div>
       </section>
       {/* Features Section */}
-      <section className='relative md:max-h-[70vh] bg-white flex overflow-hidden'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-5 md:pb-20 text-[#1209b0]'>
+      <section className='relative md:max-h-[70vh] bg-white flex overflow-hidden text-[#483ef7]'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-5 md:pb-20'>
           <h2 className='text-2xl md:text-3xl font-semibold text-center'>
             Our Features
           </h2>

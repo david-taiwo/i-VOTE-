@@ -104,7 +104,7 @@ export default function Footer() {
               <div>
                 <h4 className="text-base font-semibold mb-3">Contact Us</h4>
                 <ul className="space-y-2 text-sm text-white/80">
-                  <li>Address: Dagupan City, Pangasinan</li>
+                  <li>Lagos, Nigeria</li>
                   <li>
                     Email:{' '}
                     <Link
@@ -117,7 +117,7 @@ export default function Footer() {
                   <li>
                     Phone No.:{' '}
                     <span className="hover:text-white transition-colors">
-                      +63 912 345 6789
+                      +2349013679054
                     </span>
                   </li>
                 </ul>
