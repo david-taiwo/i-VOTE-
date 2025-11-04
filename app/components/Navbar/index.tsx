@@ -11,7 +11,7 @@ export default function Navbar() {
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Contact Us', href: '/contact' },
-    { label: 'FAQs', href: '/faqs' },
+    { label: 'FAQs', href: '/faq' },
   ]
 
   return (

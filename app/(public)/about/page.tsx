@@ -47,21 +47,21 @@ const About = () => {
   return (
     <div>
       {/* About Us Section */}
-      <section className="bg-white py-16 px-6 md:px-8">
-        <div className="max-w-7xl mx-auto text-center text-[#483ef7]">
+      <section className="bg-white text-lg md:text-lg py-16 px-6 md:px-8">
+        <div className="max-w-5xl mx-auto text-center text-[#483ef7]">
           {/* About Us Title */}
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-6">
             About Us
           </h2>
           
-          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+          <p className="max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
             iVOTE is an Online Voting System that is used to gather instant and trustworthy results. We aim to make voting and elections easy, seamless, and fair.
           </p>
 
           {/* Management Team Title */}
-          <h3 className="text-2xl md:text-3xl font-bold mb-10">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-10">
             Management Team
-          </h3>
+          </h2>
 
           {/* Management Team Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
@@ -82,7 +82,7 @@ const About = () => {
                 </div>
                 
                 {/* Team Member Name */}
-                <h4 className="text-lg font-bold mb-1">
+                <h4 className="text-sm font-bold mb-1">
                   {member.name}
                 </h4>
                 
@@ -97,21 +97,21 @@ const About = () => {
       </section>
 
       {/* Mission & Strengths Section */}
-      <section className="bg-white py-16 px-6 md:px-8">
+      <section className="bg-white px-6 md:px-8">
         <div className="max-w-7xl mx-auto text-[#483ef7]">
           {/* Mission Section */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
               Our Mission
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="  max-w-3xl mx-auto leading-relaxed">
               To provide a secure and convenient way for citizens to cast their ballots in public elections. The system will enable citizens to cast their votes without having to leave their homes or wait in line at polling stations. It will also provide an audit trail for each vote to ensure its accuracy and integrity. The system will be designed to be secure, reliable, and user-friendly.
             </p>
           </div>
 
           {/* Strengths Section */}
           <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12">
               Our Strengths
             </h3>
 
@@ -122,10 +122,10 @@ const About = () => {
                   key={index} 
                   className="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                 >
-                  <h4 className="text-lg font-bold mb-3">
+                  <h4 className="font-bold mb-3">
                     {strength.title}
                   </h4>
-                  <p className="text-gray-600">
+                  <p className="">
                     {strength.description}
                   </p>
                 </div>
