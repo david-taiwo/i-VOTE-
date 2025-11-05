@@ -7,29 +7,29 @@ export default function FAQPage() {
     {
       id: 1,
       question: 'How can I be sure that my vote and information are safe on this platform?',
-      answer: 'Your vote and personal information are secured on this platform because the system is built on the highest security protocols and standards. It also utilizes the latest encryption technologies to ensure data security and privacy.',
+      answer: 'Your vote and personal information are secured on this platform because the system is built on the highest security protocols and standards. It also utilizes the latest encryption technologies to ensure data security and privacy. Additionally, the system is designed to prevent any attempts to tamper with, alter, or manipulate the voting process.',
     },
     {
       id: 2,
       question: 'How long does it take for my vote to be counted?',
-      answer: 'This is an online voting system that speeds up the ballot counting process and counts votes instantly after they are cast in favor of their preferred candidate.',
+      answer: 'The systems will provide reminders about upcoming election dates directly to the user. These reminders can be sent via email and dashboard. This online voting system will provide a calendar view of all upcoming elections, which can be accessed directly from the system.',
     },
     {
       id: 3,
       question: 'How can I receive election date reminders?',
-      answer: 'The system will provide reminders about upcoming election dates directly to the user. These reminders can be sent via email and notifications. The system will also provide a calendar view of all upcoming elections.',
+      answer: 'Yes, your vote will be kept secret and secured on the online voting system. The system is designed to protect the integrity of the vote and ensure that the results are accurate and untampered with.',
     },
   ]
 
   return (
     <section className="bg-white py-16 px-6 md:px-8 text-[#483ef7]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl lg:max-w-4x0 mx-auto">
         {/* FAQ Title and Image */}
         <div className="mb-12 max-h-[70vh]">
           <div className="flex flex-col-reverse items-center justify-center gap-2 md:gap-8 mb-8">
             {/* FAQ Title */}
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-2xl md:text-3xl font-bold mb-4">
                 FREQUENTLY ASKED QUESTIONS
               </h1>
             </div>
@@ -59,7 +59,7 @@ export default function FAQPage() {
               <h2 className="text-lg md:text-xl font-bold mb-3">
                 {faq.id}. {faq.question}
               </h2>
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {faq.answer}
               </p>
             </div>

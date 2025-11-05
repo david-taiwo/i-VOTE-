@@ -86,20 +86,20 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="py-16 bg-white text-[#483ef7]">
+    <section className="py-16 md:py-6 bg-white text-[#483ef7]">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         {/* Title and Subtitle */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <h1 className="text-2xl md:text-3xl font-extrabold mb-1">
             CONTACT US
           </h1>
-          <p className="text-lg md:text-xl">
+          <p className="text-sm md:text-lg">
             Have a question? We're here to help.
           </p>
         </div>
 
         {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-blue-50 p-8 rounded-[30] shadow-md">
           {/* First Name and Last Name */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* First Name */}
