@@ -55,14 +55,14 @@ export default function Navbar() {
             */}
             <div className="hidden lg:flex items-center gap-8">
               <Link
-                href="/(onboarding)/login"
+                href="/login"
                 className="rounded-full border border-white/40 px-12 py-2 text-sm font-medium text-white/90 hover:bg-white/10 transition-colors"
               >
                 Log in
               </Link>
 
               <Link
-                href="/(onboarding)/register"
+                href="/register"
                 className="rounded-full bg-white px-8 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:shadow-lg transition-shadow"
               >
                 Register
@@ -135,10 +135,10 @@ export default function Navbar() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3">
-              <Link href="/(onboarding)/login" className="block rounded-full border border-slate-200 px-4 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-100 transition-colors">
+              <Link href="/login" className="block rounded-full border border-slate-200 px-4 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-100 transition-colors">
                 Log in
               </Link>
-              <Link href="/(onboarding)/register" className="block rounded-full bg-indigo-600 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-indigo-700 transition-colors">
+              <Link href="/register" className="block rounded-full bg-indigo-600 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-indigo-700 transition-colors">
                 Register
               </Link>
             </div>
