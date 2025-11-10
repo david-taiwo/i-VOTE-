@@ -123,7 +123,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <Image src="/log4.png" alt="i-vote logo" width={52} height={60} className="h-12 w-auto" />
-                <span className="text-sm font-semibold text-slate-800">i-vote</span>
+                {/* <span className="text-sm font-semibold text-slate-800">i-vote</span> */}
               </div>
               <button
                 aria-label="Close drawer"

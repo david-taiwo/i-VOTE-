@@ -92,7 +92,7 @@ export default function LoginPage() {
           </a>
           <br />
           Don’t have an account?{' '}
-          <a href="/(onboarding)/register" className="font-semibold text-indigo-600">
+          <a href="/register" className="font-semibold text-indigo-600">
             Register here
           </a>
         </p>
