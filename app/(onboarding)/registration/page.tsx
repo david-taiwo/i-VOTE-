@@ -43,7 +43,7 @@ export default function RegistrationPage() {
       <h1 className="text-2xl font-extrabold text-slate-900 md:text-3xl">Fill out your information</h1>
       <p className="mt-1 text-slate-600">Please fill out your information below</p>
 
-      <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="text-slate-700 mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
         <Input
           label="First Name"
           value={form.firstName}

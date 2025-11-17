@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --font-family-sans: var(--font-inter);
+}
+
 /* Light & Dark mode background and text defaults */
 :root {
+  --font-inter: 'Inter', sans-serif;
   color-scheme: light dark;
   --color-primary-dark: #2a2edc;
   --color-primary-light: #4c6fff;
@@ -41,7 +46,7 @@ html {
   clip-path: path("M0,0 H100% V85 Q50%,100 0,85 Z");
 }
 
-/* Inter font is applied via layout.tsx className */
+/* Inter font is applied globally via CSS variable and Tailwind font-sans class */
 
 /* --- Navbar base + gradient --- */
 .navbar-root {

@@ -19,7 +19,7 @@ export default function LoginPage() {
       if (!remember) {
         sessionStorage.setItem('ivote_tmp', '1')
       }
-      router.push('/dashboard')
+      router.push('/registration')
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Unable to sign in'
       setError(message)

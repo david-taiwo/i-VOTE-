@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Background */}
-      <div className="relative bg-[linear-gradient(90deg,#1209b0,#4f46e5,#6366f1)] pt-15 pb-5 md:pt-20 md:pb-5">
+      <div className="relative bg-[linear-gradient(90deg,#141157,#1209b0)] pt-15 pb-5 md:pt-20 md:pb-5">
         <div className="max-w-full mx-auto px-6 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_2fr] gap-5 md:gap-3 text-center lg:text-left">
           
           {/* Logo + Social Section */}

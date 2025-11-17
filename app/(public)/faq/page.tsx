@@ -22,7 +22,7 @@ export default function FAQPage() {
   ]
 
   return (
-    <section className="bg-white py-16 px-6 md:px-8 text-[#483ef7]">
+    <section className="bg-white py-16 px-6 md:px-8 text-[#28257a]">
       <div className="max-w-6xl lg:max-w-4x0 mx-auto">
         {/* FAQ Title and Image */}
         <div className="mb-12 max-h-[70vh]">

@@ -48,7 +48,7 @@ const About = () => {
     <div>
       {/* About Us Section */}
       <section className="bg-white text-lg md:text-lg py-16 px-6 md:px-8">
-        <div className="max-w-5xl mx-auto text-center text-[#483ef7]">
+        <div className="max-w-5xl mx-auto text-center text-[#0d0a4f]">
           {/* About Us Title */}
           <h2 className="text-2xl md:text-3xl font-extrabold mb-6">
             About Us
@@ -87,7 +87,7 @@ const About = () => {
                 </h4>
                 
                 {/* Team Member Title */}
-                <p className="text-sm text-blue-600 font-medium">
+                <p className="text-sm font-medium">
                   {member.title}
                 </p>
               </div>
@@ -98,7 +98,7 @@ const About = () => {
 
       {/* Mission & Strengths Section */}
       <section className="bg-white px-6 md:px-8">
-        <div className="max-w-7xl mx-auto text-[#483ef7]">
+        <div className="max-w-7xl mx-auto text-[#28257a]">
           {/* Mission Section */}
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">

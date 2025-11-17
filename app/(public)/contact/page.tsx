@@ -86,7 +86,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="py-16 md:py-6 bg-white text-[#483ef7]">
+    <section className="py-16 md:py-6 bg-white text-[#28257a]">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         {/* Title and Subtitle */}
         <div className="text-center mb-12">
@@ -232,7 +232,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-10 py-3 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold shadow-md hover:shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-10 py-3 rounded-full bg-[linear-gradient(90deg,#141157,#1209b0)] text-white font-bold shadow-md hover:shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Submit Request'}
             </button>
